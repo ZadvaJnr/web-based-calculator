@@ -1,0 +1,88 @@
+<!---This is a simple calculator project unsing HTML, CSS and JavaScripts only-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web | Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+	<script type="text/javascript" src="./scripts/scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<table style="border: 5px solid silver; border-radius: 10px;">
+			<tr>
+				<td colspan="4">
+					<input type="text" id="screen" class="screen" name="screen" value="Web Calculator by Zadva Jnr." disabled style="text-align: right;">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<button class="panel">Web Calculator</button><br>	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="plus" value="+" type="button" class="keys mathsoperators" id="plus" onmouseover="onKeyPress('plus')" onmouseout="onKeyRelease('plus')" onclick="display('+')">+</button>	
+				</td>
+				<td>
+					<button name="minus" value="-" type="button" class="keys mathsoperators" id="minus" onmouseover="onKeyPress('minus')" onmouseout="onKeyRelease('minus')" onclick="display('-')">-</button>
+				</td>
+				<td>
+					<button name="times" value="*" type="button" class="keys mathsoperators" id="times" onmouseover="onKeyPress('times')" onmouseout="onKeyRelease('times')" onclick="display('*')">&times</button>
+				</td>
+				<td>
+					<button name="divide" value="/" type="button" class="keys mathsoperators" id="divide" onmouseover="onKeyPress('divide')" onmouseout="onKeyRelease('divide')" onclick="display('/')">&divide</button>
+			</tr>
+			<tr>
+				<td>
+					<button name="seven" value="7" type="button" class="keys" id="seven" onmouseover="numKeyPress('seven')" onmouseout="numKeyRelease('seven')" onclick="display('7')">7</button>
+				</td>
+				<td>
+					<button name="eight" value="8" type="button" class="keys" id="eight" onmouseover="numKeyPress('eight')" onmouseout="numKeyRelease('eight')" onclick="display('8')">8</button>
+				</td>
+				<td>
+					<button name="nine" value="9" type="button" class="keys" id="nine" onmouseover="numKeyPress('nine')" onmouseout="numKeyRelease('nine')" onclick="display('9')">9</button>
+				</td>
+				</td>
+				<td rowspan="4">
+					<button name="equalto" value="=" type="button" id="equalto" onmouseover="onKeyPress('equalto')" onmouseout="onKeyRelease('equalto')" onclick="compute()">=</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="four" value="4" type="button" class="keys" id="four" onmouseover="numKeyPress('four')" onmouseout="numKeyRelease('four')" onclick="display('4')">4</button>
+				</td>
+				<td>
+					<button name="five" value="5" type="button" class="keys" id="five" onmouseover="numKeyPress('five')" onmouseout="numKeyRelease('five')" onclick="display('5')">5</button>
+				</td>
+				<td>
+					<button name="six" value="6" type="button" class="keys" id="six" onmouseover="numKeyPress('six')" onmouseout="numKeyRelease('six')" onclick="display('6')">6</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="one" value="1" type="button" class="keys" id="one" onmouseover="numKeyPress('one')" onmouseout="numKeyRelease('one')" onclick="display('1')">1</button>
+				</td>
+				<td>
+					<button name="two" value="2" type="button" class="keys" id="two" onmouseover="numKeyPress('two')" onmouseout="numKeyRelease('two')" onclick="display('2')">2</button>
+				</td>
+				<td>
+					<button name="three" value="3" type="button" class="keys" id="three" onmouseover="numKeyPress('three')" onmouseout="numKeyRelease('three')" onclick="display('3')">3</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="zero" value="0" type="button" class="keys" id="zero" onmouseover="numKeyPress('zero')" onmouseout="numKeyRelease('zero')" onclick="display('0')">0</button>
+				</td>
+				<td>
+					<button name="point" value="." type="button" class="keys" id="point" onmouseover="numKeyPress('point')" onmouseout="numKeyRelease('point')" onclick="display('.')">.</button>
+				</td>
+				<td>
+					<button name="clear" value="" type="button" class="keys clearKey" id="clear" onmouseover="clearKeyPress('clear')" onmouseout="clearKeyRelease('clear')" onclick="clearScreen()">C</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

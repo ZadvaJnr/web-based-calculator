@@ -1,0 +1,113 @@
+/*This is the formating of calculator interface*/
+
+/*This section formarts the entire body*/
+
+body {
+	margin: 0;
+	padding: 5% 35% 5% 35%;
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+/*Body formatting ends here*/
+
+
+/*This section formats the container for the calculator interface*/
+
+.container {
+	background-color: white;
+	border: 3px solid green;
+	width: 19.7%;
+	border-radius: 20px;
+	border: 10px solid green;
+}
+/*container formatting ends here*/
+
+
+/*This sections formats the display of the calculator*/
+
+.screen {
+	background-color: yellowgreen;
+	height: 50px;
+	width: 86%;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 10px;
+	border: 5px solid green;
+	font-size: 16px;
+}
+/*screen formatting ends here*/
+
+
+/*This section formats keys/buttons*/
+
+.keys {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	color: white;
+	background-color: green;
+	border: 1px solid white;
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+}
+/*keys/button formattin ends here*/
+
+
+/*This section formats the equal to key*/
+
+#equalto {
+	width: 50px;
+	height: 230px;
+	border-radius: 20px;
+	background-color: white;
+	padding: 10px;
+	margin: 5px;
+	color:  green;
+	border: 3px solid green;
+}
+/*equal to key formatting ends here*/
+
+/*Arithmetic operators keys formatting section*/
+.mathsoperators {
+	width: 50px;
+	height: 50px;
+	border: 3px solid green;
+	background-color: white;
+	color: green;
+	border-radius: 20px;
+}
+/*arithmetic operators keys formatting section ends here*/
+
+/*Other button keys formatting section*/
+button {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+/*button keys formatting ends here*/
+
+/*Panel/label formatting*/
+.panel {
+	color: green;
+	background-color: silver;
+	border-radius: 0 0 50% 50%;
+	height: 50px;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	border: none;
+}
+/*panel formatting ends here*/
+
+/*Clear key formatting section*/
+.clearKey {
+	color: Red;
+	background-color: white;
+	text-align: center;
+	border: 3px solid green;
+}
+
+/*End of calculator formatting*/
